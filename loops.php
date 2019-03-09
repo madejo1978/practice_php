@@ -56,7 +56,7 @@
             #Associative array
                 # key, value: you can choose (the name of) every variable you want
                 # but key and value is the format when youre looping trough a associative array
-
+                            // key     // value   
             $people = array('Brad' => 'brad@gmail.com' , 'Jose' => 'jose@gmail.com' , 'William' => 'william@gmail.com');
 
             foreach($people as $person => $email){ // $person = key and $email = value
