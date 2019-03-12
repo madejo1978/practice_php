@@ -44,5 +44,5 @@
 
     echo $cars[1][0] // two sets of brackets: first is Y-axis, second is x-axis 
 
-
+    
 ?>
