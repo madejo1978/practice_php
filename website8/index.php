@@ -18,18 +18,20 @@ $query = 'SELECT id, title, body, author,created_at FROM blogs'; // query tested
     mysqli_close($conn);
 ?>
 
-<?php include('inc/header.php') ?>
+<?php include('inc/header.php') ?> 
+
    <div class = "container">
         <h1>Blogs</h1>
         <?php foreach ($blogs as $blog) : ?>
-            <div class="row">
-                <h2><?php echo $blog['title']; ?></h2>
-                <h6>Created on <?php echo $blog['created_at']; ?> by
-                <?php echo $blog['author']; ?></h6>
+            <div class="jumbotron">
+                <h3><?php echo $blog['title']; ?></h3>
+                <small>Created on <?php echo $blog['created_at']; ?> by
+                <?php echo $blog['author']; ?></small>
                 <p><?php echo $blog['body']; ?></p>
-                <a href="<?php echo constant("ROOT_URL"); ?>blog.php?id=<?php echo $blog['id']; ?>">Read More</a>
+                <a class = "btn btn-outline-secondary" href="<?php echo constant("ROOT_URL"); ?>blog.php?id=<?php echo $blog['id']; ?>">Read More</a>
             </div>
         <?php endforeach; ?>
     </div>
+
 <?php include('inc/footer.php') ?>
 

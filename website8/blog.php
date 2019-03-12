@@ -26,12 +26,15 @@ $query = 'SELECT id, title, body, author,created_at FROM blogs WHERE ID= ' . $id
 ?>
 
 <?php include('inc/header.php') ?>
-   <div class = "container">
-        <a href="<?php echo constant("ROOT_URL"); ?>">Back to Blogs-index</a> <!-- root is specified in config/config.php -->
-        <h1>Blogs</h1>
-        <h2><?php echo $blog['title']; ?></h2>
-        <h6>Created on <?php echo $blog['created_at']; ?> by
-        <?php echo $blog['author']; ?></h6>
-        <p><?php echo $blog['body']; ?></p>
+
+    <div class = "container">
+        <h1><?php echo $blog['title']; ?></h1>
+        <div class = "jumbotron">         
+            <small>Created on <?php echo $blog['created_at']; ?> by
+            <?php echo $blog['author']; ?></small>
+            <p><?php echo $blog['body']; ?></p>
+            <a class = "btn btn-outline-secondary" href="<?php echo constant("ROOT_URL"); ?>">Back to Blogs-index</a> <!-- root is specified in config/config.php -->
+        </div>
     </div>
+
 <?php include('inc/footer.php') ?>
