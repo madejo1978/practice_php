@@ -1,6 +1,6 @@
 <?php
 // create connection with the database
-$conn = mysqli_connect('localhost', 'root','','phpblog');         // host / user / password / database-name, see also http://php.net/manual/en/function.mysqli-connect.php
+$conn = mysqli_connect(DB_HOST, DB_USER, DB_PASS, DB_NAME);         // host / user / password / database-name, see also http://php.net/manual/en/function.mysqli-connect.php
 
 // check connection 
 if(mysqli_connect_errno()){                 
