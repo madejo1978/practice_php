@@ -8,7 +8,9 @@
   <div class="collapse navbar-collapse" id="navbarsExample01">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="index.php"><h5>BLOGS</h5><span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="<?php echo ROOT_URL; ?>"><h5>HOME</h5><span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="<?php echo ROOT_URL; ?>addblog.php"><h5>ADD A BLOG</h5><span class="sr-only">(current)</span></a>
+                
             </li>
         </ul>
     </div>

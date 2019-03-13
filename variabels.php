@@ -36,7 +36,9 @@
     /* single quotes give a string output */
     $greeting2 = "$string1 $string2";
 
-    /* constant  normal to give them all uppercase
+    /* constant  
+    - normal to give them all uppercase
+    - you can echo an constant by reffering to the first parameter
     */
     define('GREETING', 'hello everyone');
     echo GREETING
