@@ -1,7 +1,7 @@
 <?php require ('config/config.php');      // require is identical to include except upon failure it will also produce a fatal E_COMPILE_ERROR level error. 
   require ('config/db.php');       
 
-$query = 'SELECT id, title, body, author,created_at FROM blogs'; // query tested in SQL
+$query = 'SELECT id, title, body, author,created_at FROM blogs ORDER BY created_at DESC'; // query tested in SQL
 // mysql_query() has 2 parameters: an SQL-query, link_identifier (=db connection)
 
 // convert it in a php-format and put in the variable $result

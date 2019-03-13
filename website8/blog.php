@@ -14,7 +14,7 @@ $query = 'SELECT id, title, body, author,created_at FROM blogs WHERE ID= ' . $id
     $result = mysqli_query($conn, $query);   
 
 // fetch data, and convert it to an array
-    $blog = mysqli_fetch_array($result,MYSQLI_ASSOC);   // returns "! one post" and returns it in an array
+    $blog = mysqli_fetch_array($result, MYSQLI_ASSOC);   // returns "! one post" and returns it in an array
     // var_dump($blog);
 
 // empty $result from the memory, not needed anymore, we are using $blog      
@@ -34,6 +34,7 @@ $query = 'SELECT id, title, body, author,created_at FROM blogs WHERE ID= ' . $id
             <?php echo $blog['author']; ?></small>
             <p><?php echo $blog['body']; ?></p>
             <a class = "btn btn-outline-secondary" href="<?php echo constant("ROOT_URL"); ?>">Back to Blogs-index</a> <!-- root is specified in config/config.php -->
+            <a class = "btn btn-outline-secondary" href="<?php echo constant("ROOT_URL"); ?>editblog.php?id=<?php echo $blog['id']; ?>">Edit Blog</a> <!-- root is specified in config/config.php -->
         </div>
     </div>
 
