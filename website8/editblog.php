@@ -62,22 +62,24 @@ $query = 'SELECT id, title, body, author,created_at FROM blogs WHERE ID= ' . $id
 <!--  get the data from the variable $blog and echo it in the form "value" --> 
    <div class = "container">
         <h1>Edit this Blog</h1>
-        <form method="POST" action="<?php $_SERVER['PHP_SELF']; ?>"><!-- Returns the filename of the currently executing script, i.c. addpost.php -->
-            <div class="form-group"> 
-                <label>Title</label>
-                <input type="text" name="title" class="form-control" value="<?php echo $blog['title']; ?>">
+            <div class="jumbotron">
+                <form method="POST" action="<?php $_SERVER['PHP_SELF']; ?>"><!-- Returns the filename of the currently executing script, i.c. addpost.php -->
+                    <div class="form-group"> 
+                        <label>Title</label>
+                        <input type="text" name="title" class="form-control" value="<?php echo $blog['title']; ?>">
+                    </div>
+                    <div class="form-group"> 
+                        <label>Text</label>
+                        <textarea name="body" class="form-control"><?php echo $blog['body']; ?></textarea>
+                    </div>
+                    <div class="form-group"> 
+                        <label>Author</label>
+                        <input type="text" name="author" class="form-control" value="<?php echo $blog['author']; ?>">
+                    </div>
+                    <input type="hidden" name="update_id" value="<?php echo $blog['id']; ?>"> <!-- hidden input: often stores a database record that needs to be updated when the form is submitted.-->
+                    <input class="btn btn-outline-secondary" type="submit" name="submit" value="submit"> 
+                </form>
             </div>
-            <div class="form-group"> 
-                <label>Text</label>
-                <textarea name="body" class="form-control"><?php echo $blog['body']; ?></textarea>
-            </div>
-            <div class="form-group"> 
-                <label>Author</label>
-                <input type="text" name="author" class="form-control" value="<?php echo $blog['author']; ?>">
-            </div>
-            <input type="hidden" name="update_id" value="<?php echo $blog['id']; ?>"> <!-- hidden input: often stores a database record that needs to be updated when the form is submitted.-->
-            <input class="btn btn-outline-secondary" type="submit" name="submit" value="submit"> 
-        </form>
     </div>
 
 <?php include('inc/footer.php') ?>

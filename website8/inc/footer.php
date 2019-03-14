@@ -6,11 +6,9 @@
 <script src = "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
 </script>
 
-    <div class = "container">
-        <div class = "jumbotron">                     
-            <a class = "btn btn-outline-secondary" href="<?php echo constant("ROOT_URL"); ?>">Back to Blogs-index</a> <!-- root is specified in config/config.php -->
-        </div>
-    </div>
+<div class = "container">
+    <a class="btn btn-secondary"href="<?php echo constant("ROOT_URL"); ?>">Back to Blogs-index</a>
+</div>
 
 </body>
 </html>
