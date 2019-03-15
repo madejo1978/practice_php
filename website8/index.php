@@ -21,9 +21,9 @@ $query = 'SELECT id, title, body, author,created_at FROM blogs ORDER BY created_
 <?php include('inc/header.php') ?> 
 
    <div class = "container">
-        <h1>Blogs</h1>
+        <div class="title slideInRight"><h1>Blogs</h1></div>
         <?php foreach ($blogs as $blog) : ?>
-            <div id="heartBeat" class="jumbotron pulse">
+            <div id="jumbotron-index" class="jumbotron slideInLeft">
                 <h3><?php echo $blog['title']; ?></h3>
                 <small>Created on <?php echo $blog['created_at']; ?> by
                 <?php echo $blog['author']; ?></small>

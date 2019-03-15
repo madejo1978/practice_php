@@ -1,6 +1,11 @@
-#heartBeat{
-    animation-duration: 1s;
-    animation-iteration-count: 2;  /* repeat */
+.title{
+    animation-duration: 2s;
+    animation-iteration-count: 1;  /* repeat */    
+}
+
+#jumbotron-index{
+    animation-duration: 2s;
+    animation-iteration-count: 1;  /* repeat */
 }
 
 p {
