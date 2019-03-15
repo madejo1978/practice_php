@@ -28,11 +28,9 @@
                 echo '<br>' . 'Failed to input your new Blog into the Database' . '<br>'; 
                 echo 'MySQLI error code is' . ' ' . mysqli_error($conn); 
         } 
-        
     }
 
 ?>
-
 
    <div class = "container">
         <h1>Add a Blog</h1>

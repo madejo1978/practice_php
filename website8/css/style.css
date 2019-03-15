@@ -1,0 +1,8 @@
+#heartBeat{
+    animation-duration: 1s;
+    animation-iteration-count: 2;  /* repeat */
+}
+
+p {
+    color:white;
+}

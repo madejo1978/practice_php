@@ -62,7 +62,7 @@ $query = 'SELECT id, title, body, author,created_at FROM blogs WHERE ID= ' . $id
 <!--  get the data from the variable $blog and echo it in the form "value" --> 
    <div class = "container">
         <h1>Edit this Blog</h1>
-            <div class="jumbotron">
+            <div class="jumbotron animated rubberBand">
                 <form method="POST" action="<?php $_SERVER['PHP_SELF']; ?>"><!-- Returns the filename of the currently executing script, i.c. addpost.php -->
                     <div class="form-group"> 
                         <label>Title</label>

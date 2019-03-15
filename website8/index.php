@@ -23,7 +23,7 @@ $query = 'SELECT id, title, body, author,created_at FROM blogs ORDER BY created_
    <div class = "container">
         <h1>Blogs</h1>
         <?php foreach ($blogs as $blog) : ?>
-            <div class="jumbotron">
+            <div id="heartBeat" class="jumbotron pulse">
                 <h3><?php echo $blog['title']; ?></h3>
                 <small>Created on <?php echo $blog['created_at']; ?> by
                 <?php echo $blog['author']; ?></small>
@@ -32,6 +32,11 @@ $query = 'SELECT id, title, body, author,created_at FROM blogs ORDER BY created_
             </div>
         <?php endforeach; ?>
     </div>
+
+
+    <script>
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"</script>
+
 
     <script
         src="http://code.jquery.com/jquery-1.12.4.js"
