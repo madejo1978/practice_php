@@ -10,4 +10,4 @@ v1.8 practice creating a Blog, using PHP procedural programming (website8)
 v1.9 Filters & Validation
 v2.0 create searchbar with AJAX & PHP (website6)
 v2.1 practice Session (website4) v2.2
-v2.3 practice Cookie (website5)
+v2.3 practice Cookie (website5) v2.3.1
