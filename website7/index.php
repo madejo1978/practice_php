@@ -43,6 +43,19 @@ rename('file2.txt','renamedFile.txt');
 // delete
 unlink('renamedFile.txt');
 
+// output data from file (to string)
+echo file_get_contents($file);
 
+// replace data from file
+//  echo file_put_contents($file,'This is the replaced Data');
+
+// add data to file
+
+    // step1 fetch it
+    $addData = file_get_contents($file);
+    // step2 concatinate to add data
+    $addData .= ' I have added Data!';
+    // step3 replace data
+    file_put_contents($file, $addData);
 
 ?>
