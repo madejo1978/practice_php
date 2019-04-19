@@ -50,12 +50,28 @@ echo file_get_contents($file);
 //  echo file_put_contents($file,'This is the replaced Data');
 
 // add data to file
-
+/* 
     // step1 fetch it
     $addData = file_get_contents($file);
     // step2 concatinate to add data
     $addData .= ' I have added Data!';
     // step3 replace data
     file_put_contents($file, $addData);
+
+// open file for reading with fopen() & fread()
+$reading = fopen($file,'r');
+$data = fread($reading, filesize($file));
+echo $data;
+fclose($reading);
+ */
+// open file for writing  with fwrite()
+$writingData = fopen('file2.txt', 'w');
+$txt = "Added Data with fwrite()\n";
+fwrite($writingData, $txt);
+$txt = "Added Data2 with fwrite()\n";
+fwrite($writingData, $txt);
+fclose($writingData);
+
+
 
 ?>

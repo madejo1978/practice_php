@@ -1,0 +1,2 @@
+Added Data with fwrite()
+Added Data2 with fwrite()
