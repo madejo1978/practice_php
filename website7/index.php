@@ -27,7 +27,21 @@ echo is_readable($file) . '<br>';
 // get filesize with function filesize()
 echo filesize('index.php');
 
+// create a directory
+mkdir('testing');
 
+// delete directory
+rmdir('testing');
+
+// copy file
+    // first parameter is file to be copied
+echo copy('file1.txt', 'file2.txt');
+
+// rename
+rename('file2.txt','renamedFile.txt');
+
+// delete
+unlink('renamedFile.txt');
 
 
 
